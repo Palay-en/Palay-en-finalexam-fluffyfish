@@ -3,8 +3,8 @@ Flappy Fish is a simple, addictive, and fun Flappy Bird-style game built as a Pr
 
 📋 Table of Contents
 Features
-Live Demo
-How to Play
+Live Demo https://palay-en.github.io/Palay-en-finalexam-fluffyfish/
+
 Technologies Used
 Gameplay Mechanics
 Future Enhancements
