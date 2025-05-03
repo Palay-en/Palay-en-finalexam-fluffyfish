@@ -3,8 +3,8 @@ Flappy Fish is a simple, addictive, and fun Flappy Bird-style game built as a Pr
 
 📋 Table of Contents
 Features
-Live Demo https://palay-en.github.io/Palay-en-finalexam-fluffyfish/
-
+Live Demo
+How to Play
 Technologies Used
 Gameplay Mechanics
 Future Enhancements
@@ -17,7 +17,7 @@ Score Counter: Track your progress and aim for a new high score.
 Background Music & Sound Effects: Enjoy an immersive audio experience.
 Lightweight and Responsive: Optimized for smooth performance on both mobile and desktop devices.
 Custom Cursor (Optional): Adds a unique style for web play.
-🔗 Live Demo
+🔗 Live Demo https://palay-en.github.io/Palay-en-finalexam-fluffyfish/
 Play Now: Flappy Fish Live Demo
 
 No installation required — just click the link and start flapping!
