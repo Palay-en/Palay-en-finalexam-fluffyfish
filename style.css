@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Bangers", Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bangers', sans-serif;
+    overflow: hidden;
+}
+.background {
+	height: 100vh;
+	width: 100vw;
+	background: url('assets/background.gif') no-repeat center center fixed;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+.fish {
+    height: 140px;
+    width: 160px;
+    position: fixed;
+    top: 40vh;
+    left: 30vw;
+    z-index: 10;
+}
+.pipe_sprite {
+	position: fixed;
+	top: 40vh;
+	left: 100vw;
+	height: 400px; 
+	width: 80px;   
+	background: radial-gradient(gray 50%, darkgray);
+	border: 5px solid black;
+}
+.score, .high-score {
+    position: fixed;
+    z-index: 20;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.score {
+    top: 10px;
+    left: 10px;
+}
+.high-score {
+    top: 90px;
+    left: 10px;
+    font-size: 2rem;
+    padding: 5px 15px;
+}
+.score_val {
+	color: gold;
+	/* font-weight: bold; */
+}
+@media only screen and (max-width: 1080px) {
+    .message {
+		font-size: 50px;
+		top: 50%;
+		white-space: nowrap;
+	}
+	.score {
+		font-size: 8vh;
+	}
+	.fish {
+        width: 60px;
+        height: 50px;
+	}
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none; /* Default hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal-content {
+    background: #222;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.start-button, .play-again-button, .mute-button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.start-button:hover, .play-again-button:hover, .mute-button:hover {
+    background-color: #0056b3;
+}
+.mute-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: white;
+    background-color: #555;
+    border: 2px solid #888;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mute-button:hover {
+    background-color: #333;
+    border-color: #666;
+}
+
+.modal-content .start-button,
+.modal-content .play-again-button,
+.modal-content .mute-button {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.modal-content .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .background {
+        background-size: cover;
+    }
+
+    .fish {
+        height: 80px;
+        width: 100px;
+        top: 35vh;
+        left: 25vw;
+    }
+
+    .score, .high-score {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .start-button, .play-again-button, .mute-button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .modal-content .button-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .fish {
+        height: 30px;
+        width: 50px;
+        top: 30vh;
+        left: 20vw;
+    }
+
+    .score, .high-score {
+        height: 3.5vh;
+        font-size: 2vh;
+        padding: 2px;
+    }
+
+    .modal-content {
+        width: 90%;
+        font-size: 2.5vh;
+        padding: 15px;
+    }
+
+    .start-button, .modal-content .play-again-button, .mute-button {
+        padding: 10px 20px; /* Increased padding */
+        font-size: 16px;    /* Larger font size */
+    }
+
+    .modal-content .button-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+}

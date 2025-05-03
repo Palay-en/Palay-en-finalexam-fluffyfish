@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.ico"/>
+    <title>Flappy Shark</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="sounds/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Offline Error Message -->
+    <div id="offline-error" class="alert alert-danger text-center position-fixed top-50 start-50 translate-middle" style="display: none;">
+        You are offline. Please check your internet connection.
+    </div>
+
+    <!-- Game Background -->
+    <div class="background"></div>
+
+    <!-- Start Modal -->
+    <div class="modal" id="start-modal" style="display: flex;">
+        <div class="modal-content">
+            <h1>Welcome to Flappy Fish</h1>
+            <p>Get ready to play an exciting game!</p>
+            <button class="start-button">Start Game</button>
+            <button class="mute-button" id="mute-button">Mute</button>
+        </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="game-over-modal">
+        <div class="modal-content">
+            <h1>Game Over</h1>
+            <p>High Score: <span id="high-score">0</span></p>
+            <p>Your Score: <span id="final-score">0</span></p>
+            <button class="play-again-button">Play Again</button>
+            <button class="mute-button" id="mute-button-gameover">Mute</button>
+        </div>
+    </div>
+
+    <!-- Game Elements -->
+    <img src="assets/fish.gif" alt="fish-gif" class="fish" id="fish-1">
+    <div class="score">
+        <span class="score_title">Score:</span>
+        <span class="score_val">0</span>
+    </div>
+    <div class="high-score">
+        High Score: <span id="high-score-display">0</span>
+    </div>
+</body>
+</html>
